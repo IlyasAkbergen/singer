@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="лучшая музыкальная школа, самые низкие цены, лучшая цена, өнер мектебі, музыкальная школа, лучшая школа, лучшая школа искусств, школа искусств, центр искусств, школа, Алматы, Алма-Ата, Макс Покровский, вокал, гитара, актерское мастерство, кахон, хореография, фортепиано, уроки вокала, уроки пения, курсы вокала, курсы игры на гитаре, уроки гитары, курсы игры на кахон, уроки кахон, курсы актерского мастерства, курсы актерства, курсы хореографии, музыкальные инструменты, курсы игры на фортепиано, уроки фортепиано, уроки домбры">
 
-    <title>Maxincubator | Школа искусств|Музыкальная школа|Алматинское отделение международной Нью-Йорской школы искусств Макса Покровского (гр. "Ногу Свело!")</title>
+    <title>Maxincubator | Школа искусств|Музыкальная школа|Первая онлайн-школа вокала Макса Покровского (гр. "Ногу Свело!")|Алматинское отделение международной Нью-Йорской школы искусств Макса Покровского (гр. "Ногу Свело!")</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -76,25 +76,35 @@
         shape-outside:circle();
         
       }
-  .carousel-inner img {
-      width: 100%;
-      height: 100%;
-  }
+      .carousel-inner img {
+          width: 100%;
+          height: 100%;
+      }
 
-.dima-500px-wordFix{
-  display: none;
-}
-@media (max-width: 500px){
-  .dima-500px-wordFix{
-    display: block;
-}
-.dima-500px-sizeFix{
-      font-size: 2.6rem !important;
-}
-}
-
-  </style>
-
+      .dima-500px-wordFix{
+        display: none;
+      }
+      @media (max-width: 500px){
+        .dima-500px-wordFix{
+            display: block;
+        }
+        .dima-500px-sizeFix{
+              font-size: 2.6rem !important;
+        }
+      }
+      .video-container {
+          position: relative;
+          padding-bottom: 56.25%; /* 16:9 */
+          height: 0;
+      }
+      .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+    </style>
   </head>
   <body id="page-top" style="background: url('img/wall.jpg')">
      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -139,15 +149,15 @@
 		  <div><img id="low_price" src="img/low_price.png" style="width: 180px; float: left; margin-top: 100px" alt="самые низкие цены в Алматы"></div>
           <img id="logo" src="img/logos/logo_white.png" style="width: 150px;" alt="logo_maxincubator">
           <div class="intro-lead-in" style="text-shadow: 5px 1px #060606">
-            <b>Алматинское отделение международной
-              <br>Нью-Йоркской школы искусств Макса Покровского (гр. "Ногу Свело!")
+            <b>Первая онлайн-школа вокала
+              <br>Макса Покровского (гр. "Ногу Свело!") в Казахстане
             </b>
             <br />"Maxincubator"
-            <br /> Онлайн-школа вокала в Казахстане 
+            <br /> 
           </div>
           <!-- <h1 style="visibility: hidden; height: 0px">Алматинское отделение международной Нью-Йоркской школы искусств Макса Покровского (гр. "Ногу Свело!")"Maxincubator"</h1> -->
           <div class="intro-heading dima-500px-sizeFix">Добро пожаловать</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#freeLesson">Записаться<br> На Пробный Урок</a><br><br>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#freeLesson">Записаться<br> На Урок</a><br><br>
         </div>
       </div>
     </header>
@@ -437,14 +447,18 @@
       <div id="gallery" class="col-md-7 mx-auto" >
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Галерея</h2>
-        <br><br>
+        <br>
+        <div class="video-container">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Tp10Uptqtn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
+      <br><br>
       <div id="demo" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="1" class="active"></li>
-          
+          <li data-target="#demo" data-slide-to="online" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
           <li data-target="#demo" data-slide-to="2"></li>
           <li data-target="#demo" data-slide-to="3"></li>
           <li data-target="#demo" data-slide-to="4"></li>
@@ -457,6 +471,9 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <img src="img/slider/online.jpg" alt="Онлайн-школа" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
             <img src="img/slider/1.jpg" alt="Максим Покровский с учениками" width="1100" height="500">
           </div>
           <div class="carousel-item">
@@ -564,7 +581,7 @@
         <!-- free lesson message -->
         <div class="row" id="freeLesson">
           <div class="col-lg-12">
-            <hr><h3 class="section-heading" style="color: #FED136 !important">Запишитесь На Пробный Урок Прямо Сейчас!</h3>
+            <hr><h3 class="section-heading" style="color: #FED136 !important">Запишитесь На Урок Прямо Сейчас!</h3>
             <form id="contactForm" name="sentMessage" novalidate>
               <div class="row">
                 <div class="col-md-6">
@@ -583,12 +600,12 @@
                   <div class="form-group">
                     <label style="color: #FED136 !important; font-family: inherit;">ПРЕДМЕТ ОБУЧЕНИЯ *</label>
                     <select class="form-control" id="subject">
-                      <option value="Guitar">Курсы Гитары</option>
+                      <!-- <option value="Guitar">Курсы Гитары</option>
                       <option value="Forte">Курсы Фортепиано</option>
-                      <option value="Cachon">Курсы Кахон</option>
+                      <option value="Cachon">Курсы Кахон</option> -->
                       <option value="Vocal">Вокал</option>
-                      <option value="Acter">Актерское Мастерство</option>
-                      <option value="Dance">Хореография</option>
+                      <!-- <option value="Acter">Актерское Мастерство</option>
+                      <option value="Dance">Хореография</option> -->
                     </select>
                     <p class="help-block text-danger"></p>
                   </div>
